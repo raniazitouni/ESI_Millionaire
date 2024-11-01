@@ -12,6 +12,7 @@ export default {
         "light-gold": "#FFFFAA",
         "custom-white": "#FFFFFA",
         "custom-gold": "#E1AB39",
+        "custom-gray": "#6A6A6A",
       },
       backgroundImage: {
         "custom-gradient":
