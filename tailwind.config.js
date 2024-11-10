@@ -13,9 +13,11 @@ export default {
         "custom-white": "#FFFFFA",
         "custom-gold": "#E1AB39",
         "custom-gray": "#6A6A6A",
+
         "bg-grey": "#FFFFFA1A",
         "custom-gradient":
           "linear-gradient(180deg, #E9C156 0%, #FFFFAA 25%, #E1AB39 50%, #E9C156 100%)",
+
       },
       backgroundImage: {
         "custom-gradient":
