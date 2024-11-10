@@ -1,12 +1,14 @@
+import React from "react";
+import Navbar from "./Components/shared/Navbar";
 
-import React from 'react'
-
-const Layout = ({children}) => {
+const Layout = ({ children }) => {
   return (
-    <div className="bg-custom-black">
-        {children}
-    </div>
-  )
-}
 
-export default Layout
+    <div className="bg-custom-black  py-11">
+      {children}
+
+    </div>
+  );
+};
+
+export default Layout;
