@@ -12,10 +12,19 @@ export default {
         "light-gold": "#FFFFAA",
         "custom-white": "#FFFFFA",
         "custom-gold": "#E1AB39",
+        "custom-gray": "#6A6A6A",
+        "bg-grey": "#FFFFFA1A",
+        "custom-gradient":
+          "linear-gradient(180deg, #E9C156 0%, #FFFFAA 25%, #E1AB39 50%, #E9C156 100%)",
       },
       backgroundImage: {
         "custom-gradient":
-          "linear-gradient(182.15deg, #E9C156 11.09%, #FFFFAA 29.64%, #E1AB39 57.47%, #E9C156 94.57%)",
+          "linear-gradient(180deg, #E9C156 0%, #FFFFAA 25%, #E1AB39 50%, #E9C156 100%)",
+        "custom-gradient-sm":
+          "linear-gradient(170deg, #E9C156 0%, #FFFFAA 25%, #E1AB39 50%, #E9C156 100%)",
+      },
+      boxShadow: {
+        custom: "34.26px 4px 52.46px 0px #00000014",
       },
     },
   },
