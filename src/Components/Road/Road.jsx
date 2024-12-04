@@ -12,7 +12,7 @@ const Road = () => {
           setIsModalOpen(false);
         }}
       />
-      <div className="flex items-center flex-col gap-6 md:gap-0 md:flex-row mx-auto justify-between py-28 md:px-24">
+      <div id="rules" className="flex items-center flex-col gap-6 md:gap-0 md:flex-row mx-auto justify-between py-28 md:px-24">
         <div className="flex flex-col items-start">
           <h1 className="text-white font-normal text-5xl md:text-7xl font-impact mb-8 text-left flex gap-2 md:gap-0 md:flex-col">
             ROAD TO

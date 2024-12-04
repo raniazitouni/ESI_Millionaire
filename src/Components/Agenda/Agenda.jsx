@@ -2,17 +2,18 @@ import React from "react";
 
 const Agenda = () => {
   const timelineItems = [
-    { time: "13:15 TO 13:30", alignRight: false },
-    { time: "13:15 TO 13:30", alignRight: true },
-    { time: "13:15 TO 13:30", alignRight: false },
-    { time: "13:15 TO 13:30", alignRight: true },
-    { time: "13:15 TO 13:30", alignRight: false },
-    { time: "13:15 TO 13:30", alignRight: true },
-    { time: "13:15 TO 13:30", alignRight: false },
+    { time: "13:15-13:30", alignRight: false, event: "Check in " },
+    { time: "13:35-13:50", alignRight: true, event: "Opening Ceremony" },
+    { time: "13:55-14:20", alignRight: false, event: "Round 1" },
+    { time: "14:25-14:35", alignRight: true, event: "Fun Activies" },
+    { time: "14:40-15:00", alignRight: false, event: "Round 2" },
+    { time: "15:05-15:25", alignRight: true, event: "Round 3" },
+    { time: "15:30-15:50", alignRight: false, event: "Finals" },
+    { time: "15:55-16:15", alignRight: true, event: "Closing Ceremony" },
   ];
 
   return (
-    <div className="p-8">
+    <div id="agenda" className="p-8">
       <h1
         className="md:text-7xl text-4xl  tracking-wide font-impact font-bold text-center mb-12 text-transparent"
         style={{
@@ -25,7 +26,7 @@ const Agenda = () => {
         AGENDA
       </h1>
       <div
-        className="md:w-[70%]  mx-auto relative rounded-xl p-8 md:py-16  shadow-md md:text-2xl"
+        className="xl:mx-60 mx-auto relative rounded-xl md:p-20 p-10 md:py-16  shadow-md md:text-2xl"
         style={{
           backgroundColor: "rgba(255, 255, 250, 0.1)", // Adjusted background color
         }}
@@ -37,7 +38,9 @@ const Agenda = () => {
         {timelineItems.map((item, index) => (
           <div
             key={index}
-            className="relative flex w-full items-center mb-3 md:mb-6"
+            className="relative flex w-full items-center mb-3 md:mb-6
+            text-white
+            hover:text-custom-gold  text-sm md:text-2xl  hover:md:text-3xl hover:text-md"
           >
             {/* Content Layout */}
             <div
@@ -49,34 +52,36 @@ const Agenda = () => {
               <div
                 className={`w-1/2 ${
                   item.alignRight
-                    ? "md:pl-36 md:ml-1 pl-9"
-                    : "md:pr-36 md:mr-1 pr-9"
+                    ? "flex justify-end "
+                    : "flex justify-start "
                 } `}
               >
                 <span
                   className={`${
                     item.alignRight ? "text-left" : "text-right"
-                  } block font-[Poppins] font-light text-sm md:text-2xl  text-white text-opacity-60 tracking-wider`}
+                  } block font-[Poppins] font-light   text-opacity-60 tracking-wider`}
                 >
                   {item.time}
                 </span>
               </div>
 
               {/* Center Dot */}
-              <div className="w-3 h-3 bg-[#F8F8F8] rounded-full absolute left-1/2 transform -translate-x-1/2 z-10" />
+              <div className="w-3 h-3 bg-[#F8F8F8]  rounded-full absolute left-1/2 transform -translate-x-1/2 z-10" />
 
               {/* Game Started Text */}
               <div
                 className={`w-1/2 ${
-                  item.alignRight ? "md:pr-8 pr-10" : "md:pl-8 pl-10"
+                  item.alignRight
+                    ? " flex justify-start"
+                    : "flex justify-end"
                 }`}
               >
                 <span
                   className={`${
                     item.alignRight ? "text-right" : "text-left"
-                  } block text-white font-[Poppins] text-nowrap tracking-wide`}
+                  } block  font-[Poppins] text-nowrap tracking-wide`}
                 >
-                  Game Started
+                  {item.event}
                 </span>
               </div>
             </div>

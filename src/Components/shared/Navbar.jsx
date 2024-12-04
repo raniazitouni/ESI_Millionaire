@@ -51,6 +51,13 @@ const Navbar = () => {
     };
   }, [navlinks]);
 
+   const handleClick = () => {
+     window.open(
+       "https://docs.google.com/forms/d/e/1FAIpQLSelUE6wfnZ5ZtEaNlbWMwEj3XLCodg9UIoubIefHGxM2ghXsQ/viewform",
+       "_blank"
+     );
+   };
+
   return (
     <div className="md:px-20 sm:px-10 px-7">
       <div
@@ -83,11 +90,11 @@ const Navbar = () => {
           ))}
         </div>
         <div className="xl:flex hidden flex-row justify-between gap-x-4 xl:text-lg text-md font-poppins font-medium py-4">
-          <button className="py-2.5 xl:px-11 px-7 border-2 border-custom-gold text-custom-gold rounded-xl ">
+          {/* <button className="py-2.5 xl:px-11 px-7 border-2 border-custom-gold text-custom-gold rounded-xl ">
             Guest
-          </button>
-          <button className="py-2.5 xl:px-6 px-4 bg-custom-gradient  text-custom-black rounded-xl">
-            Participant
+          </button> */}
+          <button className="py-2.5 xl:px-16 px-4 bg-custom-gradient  text-custom-black rounded-xl" onClick={handleClick}>
+            register
           </button>
         </div>
         <div

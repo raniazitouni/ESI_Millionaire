@@ -7,19 +7,24 @@ const Modal = ({ isOpen, onClose }) => {
 
   const sections = [
     {
-      title: "Teams",
-      content:
-        "Teams can consist of up to four members, each contributing their knowledge to answer quiz questions and progress through the rounds.",
-    },
-    {
       title: "Round 1",
       content:
-        "Round 1 will consist of general knowledge questions. Teams must answer these questions within a limited time to proceed to the next round.",
+        "Two teams, each consisting of eight participants, will compete. In each matchup, two participants from opposing teams will face off. The first participant to respond gets to answer a question and can choose between a question worth 1 point or a more challenging question worth 3 points. The team with the most points at the end of the round will be declared the winner.",
     },
     {
       title: "Round 2",
       content:
-        "Round 2 will feature more challenging questions. Only the top teams will advance, competing for the ultimate prize.",
+        "The winning team from Round 1 will be divided into two teams of four participants each. In this round, each participant will have the opportunity to answer two questions, following the same rules as Round 1.",
+    },
+    {
+      title: "Round 3",
+      content:
+        "This round follows the same rules as Round 2, but each team will consist of only two participants. Each participant will again have two questions to answer.",
+    },
+    {
+      title: "Round 4",
+      content:
+        "The final round features the winning team from Round 3, divided into two individual competitors. These participants will compete head-to-head, answering a total of five questions. ",
     },
   ];
 
@@ -58,10 +63,10 @@ const Modal = ({ isOpen, onClose }) => {
               <AiOutlineClose />
             </button>
           </div>
-          <p className="text-lg mb-6 font-poppins">
+          {/* <p className="text-lg mb-6 font-poppins">
             The ESI Millionaire event is an exciting quiz competition inspired
             by the popular game show "Who Wants to Be a Millionaire."
-          </p>
+          </p> */}
           <ul className="space-y-4 font-semibold">
             {sections.map((section, index) => (
               <li

@@ -1,5 +1,20 @@
 import React, { useEffect, useState } from "react";
 import mem from "/images/teamAssets/member.svg";
+import aymen from "/images/teamAssets/aymen.jpg";
+import idriss from "/images/teamAssets/Idriss.jpg";
+import lyna from "/images/teamAssets/lyna.jpg";
+import rayane from "/images/teamAssets/Rayan.jpg";
+import safa from "/images/teamAssets/safa.jpg";
+import yara from "/images/teamAssets/yara.jpg";
+import zaki from "/images/teamAssets/zaki.jpg";
+import maroua from "/images/teamAssets/maroua.jpg";
+import aya from "/images/teamAssets/aya.jpg";
+import rania from "/images/teamAssets/rania.jpg";
+import sarah from "/images/teamAssets/sarah.jpg";
+import sami from "/images/teamAssets/Sami.jpg";
+import islam from "/images/teamAssets/islam.jpg";
+
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -7,19 +22,19 @@ import "swiper/css/effect-coverflow";
 
 const Team = () => {
   const members = [
-    { img: mem, name: "HASNAOUI SARAH" },
-    { img: mem, name: "ZITOUNI RANIA" },
-    { img: mem, name: "TAILAB LINA " },
-    { img: mem, name: "MARAF MOHAMED ISLAM" },
-    { img: mem, name: "SOUILAH MOHAMMED ZAKARIA" },
-    { img: mem, name: "BOUKAKIOU RAYANE" },
-    { img: mem, name: "BENLECHHAB YARA" },
-    { img: mem, name: "TERKMANI AYA" },
-    { img: mem, name: "ALOUANE SAFA" },
-    { img: mem, name: "BOUAB SAMI" },
-    { img: mem, name: "ZIADI IDRIS" },
-    { img: mem, name: "YAHIAOUI MAROUA" },
-    { img: mem, name: "AZZOUZ ABDELLAH AIMENE" },
+    { img: sarah, name: "HASNAOUI SARAH" },
+    { img: rania, name: "ZITOUNI RANIA" },
+    { img: lyna, name: "TAILEB LYNA " },
+    { img: islam, name: "MARAF MOHAMED ISLAM" },
+    { img: zaki, name: "SOUALAHMOHAMMED ZAKARIA" },
+    { img: rayane, name: "BOUKAKIOU RAYAN" },
+    { img: yara, name: "BENLACHEHEB YARA" },
+    { img: aya, name: "TERKMANI AYA" },
+    { img: safa, name: "ALOUANE SAFA" },
+    { img: sami, name: "BOUAB SAMI" },
+    { img: idriss, name: "ZIADI IDRISS" },
+    { img: maroua, name: "YAHIAOUI MAROUA" },
+    { img: aymen, name: "AZZOUZ ABDELLAH AIMENE" },
   ];
 
   const [coverflowConfig, setCoverflowConfig] = useState({
@@ -34,9 +49,9 @@ const Team = () => {
     if (window.innerWidth <= 640) {
       setCoverflowConfig({
         rotate: 0,
-        stretch: -25,
+        stretch: -20,
         depth: 250,
-        modifier: 3.5,
+        modifier: 4,
         slideShadows: true,
       });
     } else if (window.innerWidth <= 768) {
@@ -103,7 +118,7 @@ const Team = () => {
           loop={true}
           slidesPerView={2}
           autoplay={{
-            delay: 2000,
+            delay: 1350,
             disableOnInteraction: false,
           }}
           coverflowEffect={coverflowConfig}
@@ -117,11 +132,22 @@ const Team = () => {
           {members.map((item, index) => (
             <SwiperSlide key={index}>
               <div className="flex flex-col items-center px-10">
-                <img
+                <div className="relative xl:w-[418px] xl:h-[426px] md:w-96 md:h-80 sm:w-64 sm:h-72 w-52 h-56">
+                  <img
+                    src={mem}
+                    alt="cadre"
+                    className="absolute inset-0 w-full h-full object-contain z-0"
+                  />
+                  <img
+                    src={item.img}
+                    className="absolute inset-0 sm:w-[70%] sm:h-[70%] w-[70%] h-[68%] object-cover rounded-full m-auto z-10"
+                  />
+                </div>
+                {/* <img
                   src={item.img}
                   alt={item.name}
-                  className="xl:w-[418px] xl:h-[426px] md:w-96 md:h-80 sm:w-64 sm:h-72 w-52 h-56 object-contain"
-                />
+                  className=" object-contain"
+                /> */}
                 <p className="font-poppins text-custom-white sm:text-2xl text-base text-center font-light">
                   {item.name}
                 </p>

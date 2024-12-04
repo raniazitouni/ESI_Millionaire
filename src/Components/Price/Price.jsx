@@ -2,7 +2,7 @@ import React from "react";
 
 const Price = () => {
   return (
-    <div className=" md:py-56">
+    <div id="price" className=" md:py-56">
       <h1 className="md:text-9xl text-5xl  tracking-wide  font-bold text-white text-center mb-6 font-impact">
         {" "}
         <span

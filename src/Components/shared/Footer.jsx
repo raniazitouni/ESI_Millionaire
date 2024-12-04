@@ -2,6 +2,9 @@ import React from "react";
 import { AiFillInstagram, AiOutlineInstagram } from "react-icons/ai";
 
 const Footer = () => {
+  const handleClick = () => {
+    window.open("https://www.instagram.com/esi_millionaire/", "_blank");
+  };
   return (
     <>
       <div className=" bg-black w-full flex flex-col md:flex-row md:justify-between md:px-24 md:py-8 px-8 py-4 border-b-2 border-custom-gray gap-4 md:gap-0 items-start md:items-center">
@@ -23,16 +26,16 @@ const Footer = () => {
           <ul>
             <h3 className="font-impact text-custom-white text-xl">PAGE</h3>
             <li className="text-custom-white font-poppins text-base mb-1">
-              <a href="#">Home</a>
+              <a href="#home">Home</a>
             </li>
             <li className="text-custom-white font-poppins text-base mb-1">
-              <a href="#">Agenda</a>
+              <a href="#agenda">Agenda</a>
             </li>
             <li className="text-custom-white font-poppins text-base mb-1">
-              <a href="#">Team</a>
+              <a href="#our-team">Team</a>
             </li>
             <li className="text-custom-white font-poppins text-base mb-1">
-              <a href="#">Join Us</a>
+              <a href="#rules">Rules</a>
             </li>
           </ul>
           <ul>
@@ -50,10 +53,13 @@ const Footer = () => {
                     backgroundClip: "text",
                   }}
                 >
-                  AP1.ESI.Oued Smar
+                  A1.ESI.Oued Smar
                 </li>
               </div>
-              <div className="flex items-center gap-2">
+              <div
+                className="flex items-center gap-2 cursor-pointer"
+                onClick={handleClick}
+              >
                 <AiOutlineInstagram className="bg-white size-9 p-1 rounded-full" />
                 <p className="text-custom-white font-poppins text-base ">
                   instagram account
