@@ -46,7 +46,7 @@ const Modal = ({ isOpen, onClose }) => {
         onClick={onClose}
       >
         <motion.div
-          className="bg-custom-black border-2 border-custom-gold rounded-lg p-0%] md:w-full max-w-3xl text-custom-white relative"
+          className="bg-custom-black border-2 border-custom-gold rounded-lg p-8 w-[85%] md:w-full max-w-3xl text-custom-white relative"
           initial={{ scale: 0.9, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           exit={{ scale: 0.9, opacity: 0 }}

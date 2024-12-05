@@ -47,14 +47,14 @@ const HeroSection = () => {
       className="relative w-full flex flex-col sm:pt-0 xs:pt-28 pt-5 md:px-20 sm:px-10 xs:px-4 px-0 z-20"
     >
       <motion.img
-        className="absolute md:bottom-9 sm:bottom-10 xs:bottom-56 bottom-60 xl:left-80 lg:left-64 md:left-36 sm:left-20 left-2 xl:w-[840px] xl:h-[700px] lg:w-[750px] lg:h-[600px] md:w-[680px] md:h-[550px] w-[600px] h-[450px] object-contain z-0"
+        className="absolute md:bottom-9 sm:bottom-10 bottom-56  xl:left-80 lg:left-64 md:left-36 sm:left-20 left-2 xl:w-[840px] xl:h-[700px] lg:w-[750px] lg:h-[600px] md:w-[680px] md:h-[550px] w-[600px] h-[450px] object-contain z-0"
         src={coin}
         alt="coin"
         animate={{ rotate: 360 }}
         transition={{ repeat: Infinity, duration: 30, ease: "linear" }}
       />
       <div className="flex justify-center items-center xl:py-60 md:py-52 sm:py-40 py-32 ">
-        <span className="font-impact font-extrabold xl:text-9xl lg:text-8xl md:text-7xl xs:text-5xl text-5xl bg-clip-text sm:bg-custom-gradient bg-custom-gradient-sm text-transparent leading-[182.96px] tracking-[0.03em]">
+        <span className="font-impact font-extrabold xl:text-9xl lg:text-8xl md:text-7xl xs:text-5xl text-4xl bg-clip-text sm:bg-custom-gradient bg-custom-gradient-sm text-transparent leading-[182.96px] tracking-[0.03em]">
           ESI&rsquo;S MILLIONAIRE
         </span>
       </div>
