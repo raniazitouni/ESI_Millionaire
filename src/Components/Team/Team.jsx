@@ -102,7 +102,7 @@ const Team = () => {
   console.log(coverflowConfig);
 
   return (
-    <div id="our-team" className="flex flex-col py-32 md:px-20 sm:px-10 px-7">
+    <div id="our-team" className="flex flex-col pb-32 md:px-20 sm:px-10 px-7">
       <div className="flex justify-center items-center sm:mb-10 mb-0 ">
         <span className="font-impact font-bold xl:text-8xl  md:text-7xl text-5xl  bg-clip-text sm:bg-custom-gradient bg-custom-gradient-sm text-transparent leading-[182.96px] tracking-[0.03em]">
           OUR TEAM
