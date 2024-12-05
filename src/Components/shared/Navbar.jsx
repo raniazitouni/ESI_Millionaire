@@ -98,7 +98,7 @@ const Navbar = () => {
           </button>
         </div>
         <div
-          className={`sm:hidden block mx-7 my-6 p-1 hover:border-2  hover:border-custom-gold rounded-md ${
+          className={`sm:hidden block xs:mx-7 mx-14 my-6 p-1  hover:border-2  hover:border-custom-gold rounded-md ${
             isMenu && "border-2 border-custom-gold"
           }`}
           onClick={toggleMenu}

@@ -17,7 +17,7 @@ const Description = () => {
           GOLD!
         </span>
       </h1>
-      <p className="text-white tracking-wide  text-xl md:text-2xl font-light leading-8 font-poppins text-center w-11/12 md:w-3/4 mx-auto md:px-4">
+      <p className="text-white tracking-wide  xs:text-xl text-lg md:text-2xl font-light leading-8 font-poppins text-center w-11/12 md:w-3/4 mx-auto md:px-4">
         ESI's Millionaire is an exciting quiz competition inspired by the
         popular game show
         <br className="hidden md:block" /> "Who Wants to Be a Millionaire"

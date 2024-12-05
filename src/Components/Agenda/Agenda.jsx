@@ -8,7 +8,7 @@ const Agenda = () => {
     { time: "14:40-14:50", alignRight: true, event: "Fun Activies" },
     { time: "14:55-15:15", alignRight: false, event: "Round 2" },
     { time: "15:20-15:40", alignRight: true, event: "Round 3" },
-    { time: "15:45-16:05", alignRight: false, event: "Finals" },
+    { time: "15:45-16:05", alignRight: false, event: "Final round" },
     { time: "16:10-16:30", alignRight: true, event: "Closing Ceremony" },
   ];
 
@@ -26,7 +26,7 @@ const Agenda = () => {
         AGENDA
       </h1>
       <div
-        className="xl:mx-60 mx-auto relative rounded-xl md:p-20 p-10 md:py-16  shadow-md md:text-2xl"
+        className="xl:mx-60 mx-auto  relative rounded-xl  py-10  md:px-20 md:py-36  xs:px-10 px-4 shadow-md md:text-2xl"
         style={{
           backgroundColor: "rgba(255, 255, 250, 0.1)", // Adjusted background color
         }}

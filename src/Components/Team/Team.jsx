@@ -14,7 +14,6 @@ import sarah from "/images/teamAssets/sarah.jpg";
 import sami from "/images/teamAssets/Sami.jpg";
 import islam from "/images/teamAssets/islam.jpg";
 
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -116,7 +115,7 @@ const Team = () => {
           grabCursor={true}
           centeredSlides={true}
           loop={true}
-          slidesPerView={2}
+          // slidesPerView={2}
           autoplay={{
             delay: 1350,
             disableOnInteraction: false,
@@ -128,6 +127,16 @@ const Team = () => {
             clickable: true,
           }}
           modules={[EffectCoverflow, Navigation, Autoplay]}
+          breakpoints={{
+            // For screens >= 680px
+            480: {
+              slidesPerView: 2,
+            },
+            // For screens < 680px
+            0: {
+              slidesPerView: 1,
+            },
+          }}
         >
           {members.map((item, index) => (
             <SwiperSlide key={index}>
@@ -148,7 +157,13 @@ const Team = () => {
                   alt={item.name}
                   className=" object-contain"
                 /> */}
-                <p className="font-poppins text-custom-white sm:text-2xl text-base text-center font-light">
+                <p
+                  className={`font-poppins ${
+                    item.name == "HASNAOUI SARAH"
+                      ? "text-custom-gold"
+                      : " text-custom-white"
+                  } sm:text-2xl text-base text-center font-light`}
+                >
                   {item.name}
                 </p>
               </div>

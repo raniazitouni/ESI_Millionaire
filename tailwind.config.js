@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{html,js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        xs: "480px", // Define the xs breakpoint for screens smaller than 480px
+      },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
         impact: ["Impact", "sans-serif"],
