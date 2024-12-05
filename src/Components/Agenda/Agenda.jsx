@@ -2,14 +2,14 @@ import React from "react";
 
 const Agenda = () => {
   const timelineItems = [
-    { time: "13:15-13:30", alignRight: false, event: "Check in " },
-    { time: "13:35-13:50", alignRight: true, event: "Opening Ceremony" },
-    { time: "13:55-14:20", alignRight: false, event: "Round 1" },
-    { time: "14:25-14:35", alignRight: true, event: "Fun Activies" },
-    { time: "14:40-15:00", alignRight: false, event: "Round 2" },
-    { time: "15:05-15:25", alignRight: true, event: "Round 3" },
-    { time: "15:30-15:50", alignRight: false, event: "Finals" },
-    { time: "15:55-16:15", alignRight: true, event: "Closing Ceremony" },
+    { time: "13:30-13:45", alignRight: false, event: "Check in " },
+    { time: "13:50-14:05", alignRight: true, event: "Opening Ceremony" },
+    { time: "14:10-14:35", alignRight: false, event: "Round 1" },
+    { time: "14:40-14:50", alignRight: true, event: "Fun Activies" },
+    { time: "14:55-15:15", alignRight: false, event: "Round 2" },
+    { time: "15:20-15:40", alignRight: true, event: "Round 3" },
+    { time: "15:45-16:05", alignRight: false, event: "Finals" },
+    { time: "16:10-16:30", alignRight: true, event: "Closing Ceremony" },
   ];
 
   return (
@@ -51,9 +51,7 @@ const Agenda = () => {
               {/* Time Text */}
               <div
                 className={`w-1/2 ${
-                  item.alignRight
-                    ? "flex justify-end "
-                    : "flex justify-start "
+                  item.alignRight ? "flex justify-end " : "flex justify-start "
                 } `}
               >
                 <span
@@ -71,9 +69,7 @@ const Agenda = () => {
               {/* Game Started Text */}
               <div
                 className={`w-1/2 ${
-                  item.alignRight
-                    ? " flex justify-start"
-                    : "flex justify-end"
+                  item.alignRight ? " flex justify-start" : "flex justify-end"
                 }`}
               >
                 <span
