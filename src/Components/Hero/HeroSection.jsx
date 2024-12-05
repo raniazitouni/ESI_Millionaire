@@ -58,7 +58,7 @@ const HeroSection = () => {
           ESI&rsquo;S MILLIONAIRE
         </span>
       </div>
-      <div className="flex sm:flex-row flex-col justify-between sm:px-0 px-14">
+      <div className="flex sm:flex-row flex-col justify-between sm:px-0 xs2:px-14 px-7">
         <div className="flex flex-col sm:my-0 my-12 sm:items-start items-center">
           <p className="font-poppins text-custom-white sm:text-4xl text-2xl">
             December 10th
@@ -76,23 +76,23 @@ const HeroSection = () => {
         </div>
         <div className="bg-bg-grey flex flex-row text-custom-white py-4 px-4 font-poppins justify-between rounded-xl">
           <div className="flex flex-col mx-3 font-medium">
-            <div className="text-3xl">{timeLeft.days}</div>
-            <div className="text-sm">Days</div>
+            <div className="xs2:text-3xl text-2xl ">{timeLeft.days}</div>
+            <div className="xs2:text-sm xs:text-xs">Days</div>
           </div>
-          <div className="font-medium text-3xl">&#58;</div>
+          <div className="font-medium xs2:text-3xl text-2xl">&#58;</div>
           <div className="flex flex-col  mx-3 font-medium">
-            <div className="text-3xl">{timeLeft.hours}</div>
-            <div className="text-sm">Hours</div>
+            <div className="xs2:text-3xl text-2xl">{timeLeft.hours}</div>
+            <div className="xs2:text-sm xs:text-xs">Hours</div>
           </div>
-          <div className="font-medium text-3xl">&#58;</div>
+          <div className="font-medium xs2:text-3xl text-2xl">&#58;</div>
           <div className="flex flex-col  mx-3 font-extralight">
-            <div className="text-3xl">{timeLeft.minutes}</div>
-            <div className="text-sm">Mins</div>
+            <div className="xs2:text-3xl text-2xl">{timeLeft.minutes}</div>
+            <div className="xs2:text-sm xs:text-xs">Mins</div>
           </div>
-          <div className="font-medium text-3xl">&#58;</div>
+          <div className="font-medium xs2:text-3xl text-2xl">&#58;</div>
           <div className="flex flex-col  mx-3 font-extralight">
-            <div className="text-3xl">{timeLeft.seconds}</div>
-            <div className="text-sm">Secs</div>
+            <div className="xs2:text-3xl text-2xl">{timeLeft.seconds}</div>
+            <div className="xs2:text-sm xs:text-xs">Secs</div>
           </div>
         </div>
       </div>

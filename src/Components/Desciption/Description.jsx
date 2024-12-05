@@ -3,7 +3,7 @@ import React from "react";
 const Description = () => {
   return (
     <div id="the-event" className="py-16">
-      <h1 className="text-white font-light text-center text-4xl md:text-6xl font-poppins md:mb-20 mb-12">
+      <h1 className="text-white font-light text-center text-4xl md:text-6xl font-poppins md:mb-20 mb-12 xs:px-0 px-5">
         PLAY BOLD WIN{" "}
         <span
           className="tracking-wide font-bold text-transparent font-impact"
@@ -17,7 +17,7 @@ const Description = () => {
           GOLD!
         </span>
       </h1>
-      <p className="text-white tracking-wide  xs:text-xl text-lg md:text-2xl font-light leading-8 font-poppins text-center w-11/12 md:w-3/4 mx-auto md:px-4">
+      <p className="text-white tracking-wide  xs:text-xl text-lg md:text-2xl font-light leading-8 font-poppins text-center w-11/12 md:w-3/4 mx-auto md:px-4 xs:px-0 px-5">
         ESI's Millionaire is an exciting quiz competition inspired by the
         popular game show
         <br className="hidden md:block" /> "Who Wants to Be a Millionaire"

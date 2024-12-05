@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import coin from "/images/joinUsAssets/coinleft.svg";
-import { motion} from "framer-motion";
+import { motion } from "framer-motion";
 
 const JoinUs = () => {
   const [isInView, setIsInView] = useState(false);
@@ -23,13 +23,12 @@ const JoinUs = () => {
     };
   }, []);
 
-  const handleClick=()=>{
-      window.open(
-        "https://docs.google.com/forms/d/e/1FAIpQLSelUE6wfnZ5ZtEaNlbWMwEj3XLCodg9UIoubIefHGxM2ghXsQ/viewform",
-        "_blank"
-      );
-
-  }
+  const handleClick = () => {
+    window.open(
+      "https://docs.google.com/forms/d/e/1FAIpQLSelUE6wfnZ5ZtEaNlbWMwEj3XLCodg9UIoubIefHGxM2ghXsQ/viewform",
+      "_blank"
+    );
+  };
   return (
     <div
       id="join-us"
@@ -55,23 +54,26 @@ const JoinUs = () => {
         </span>
       </div>
       <div
-        className="border-2 border-[#FFFFFF66] bg-white/10 backdrop-blur-sm shadow-lg rounded-2xl py-12 lg:px-28 sm:px-14 px-10 xl:mx-44 sm:mx-32 mx-8 "
+        className="border-2 border-[#FFFFFF66] bg-white/10 backdrop-blur-sm shadow-lg rounded-2xl xs:py-12 py-8 lg:px-28 sm:px-14 xs:px-10 px-7 xl:mx-44 sm:mx-32 mx-8 "
         style={{ backdropFilter: "blur(50px)" }}
       >
         {/* <h1 className="font-poppins md:text-3xl text-lg text-custom-white font-bold lg:text-left text-center">
           lorem
         </h1> */}
-        <p className="font-poppins md:text-lg text-base text-custom-white py-10 lg:text-left text-center">
+        <p className="font-poppins md:text-lg text-base text-custom-white xs:py-10 py-8 lg:text-left text-center">
           We are a dedicated team of third-year students at ESI Algiers, excited
           to host ESI's Millionaire. Our aim is to deliver an entertaining and
           memorable quiz competition that brings everyone together!
         </p>
-        <div className="flex lg:flex-row flex-col gap-10 justify-center font-poppins xl:text-lg md:text-base text-sm md:px-0 px-10">
+        <div className="flex lg:flex-row flex-col gap-10 justify-center font-poppins xl:text-lg md:text-base xs2:text-sm text-xs md:px-0 px-10">
           {/* <button className="py-2.5 xl:px-6 px-2 bg-custom-gradient  text-custom-black rounded-3xl">
             Join Us As a Participant
           </button> */}
-          <button className="py-2.5 xl:px-28 px-10 border-2 border-custom-gold text-custom-gold rounded-3xl " onClick={handleClick}>
-            Join Us 
+          <button
+            className="py-2.5 xl:px-28 xs:px-10 px-5 border-2 border-custom-gold text-custom-gold rounded-3xl "
+            onClick={handleClick}
+          >
+            Join Us
           </button>
         </div>
       </div>

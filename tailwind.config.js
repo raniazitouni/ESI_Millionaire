@@ -5,6 +5,7 @@ export default {
     extend: {
       screens: {
         xs: "480px", // Define the xs breakpoint for screens smaller than 480px
+        xs2: "400px"
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],

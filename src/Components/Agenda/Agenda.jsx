@@ -13,7 +13,7 @@ const Agenda = () => {
   ];
 
   return (
-    <div id="agenda" className="p-8">
+    <div id="agenda" className="xs2:p-8 p-4">
       <h1
         className="md:text-7xl text-4xl  tracking-wide font-impact font-bold text-center mb-12 text-transparent"
         style={{
@@ -26,7 +26,7 @@ const Agenda = () => {
         AGENDA
       </h1>
       <div
-        className="xl:mx-60 mx-auto  relative rounded-xl  py-10  md:px-20 md:py-36  xs:px-10 px-4 shadow-md md:text-2xl"
+        className="xl:mx-60 mx-auto  relative rounded-xl  py-10  md:px-20 md:py-36  xs:px-10 xs2:px-4 px-2 shadow-md md:text-2xl"
         style={{
           backgroundColor: "rgba(255, 255, 250, 0.1)", // Adjusted background color
         }}
