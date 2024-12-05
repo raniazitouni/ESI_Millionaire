@@ -26,7 +26,7 @@ const Agenda = () => {
         AGENDA
       </h1>
       <div
-        className="xl:mx-60 xs:mx-2 mx-0 relative rounded-xl  py-10  md:px-20 md:py-36  xs:px-10 xs2:px-4 px-2 shadow-md md:text-2xl"
+        className="xl:mx-48 xs:mx-2 mx-0 relative rounded-xl  py-10  md:px-20 md:py-36  xs:px-10 xs2:px-4 px-2 shadow-md md:text-2xl"
         style={{
           backgroundColor: "rgba(255, 255, 250, 0.1)", // Adjusted background color
         }}
