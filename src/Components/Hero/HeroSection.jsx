@@ -47,7 +47,7 @@ const HeroSection = () => {
       className="relative w-full flex flex-col sm:pt-0 xs:pt-28 pt-5 md:px-20 sm:px-10 xs:px-4 px-0 z-20"
     >
       <motion.img
-        className="absolute md:bottom-9 sm:bottom-10 xs:bottom-40 bottom-56  2xl:left-96 xl:left-64 lg:left-52 md:left-24 sm:left-20 left-2 xl:w-[840px] xl:h-[700px] lg:w-[750px] lg:h-[600px] md:w-[680px] md:h-[550px] w-[600px] h-[450px] object-contain z-0"
+        className="absolute md:bottom-9 sm:bottom-10 xs:bottom-40 bottom-56  2xl:left-96 xl:left-64 lg:left-52 md:left-24 sm:left-20 xs:left-2 left-0 xl:w-[840px] xl:h-[700px] lg:w-[750px] lg:h-[600px] md:w-[680px] md:h-[550px] w-[600px] h-[450px] object-contain z-0"
         src={coin}
         alt="coin"
         animate={{ rotate: 360 }}
