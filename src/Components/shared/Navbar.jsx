@@ -25,9 +25,9 @@ const Navbar = () => {
 
   useEffect(() => {
     const observerOptions = {
-      root: null, 
+      root: null,
       rootMargin: "0px",
-      threshold: 0.5, 
+      threshold: 0.5,
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -45,23 +45,22 @@ const Navbar = () => {
       }
     });
 
-   
     return () => {
       observer.disconnect();
     };
   }, [navlinks]);
 
-   const handleClick = () => {
-     window.open(
-       "https://docs.google.com/forms/d/e/1FAIpQLSelUE6wfnZ5ZtEaNlbWMwEj3XLCodg9UIoubIefHGxM2ghXsQ/viewform",
-       "_blank"
-     );
-   };
+  const handleClick = () => {
+    window.open(
+      "https://docs.google.com/forms/d/e/1FAIpQLSelUE6wfnZ5ZtEaNlbWMwEj3XLCodg9UIoubIefHGxM2ghXsQ/viewform",
+      "_blank"
+    );
+  };
 
   return (
     <div className="md:px-20 sm:px-10 px-7">
       <div
-        className="sm:static fixed top-0 left-0 w-full bg-bg-grey flex flex-row justify-between py-2 px-4 
+        className="sm:static fixed top-0 left-0 w-full sm:bg-bg-grey bg-[#010101] flex flex-row justify-between py-2 px-4 
       sm:rounded-2xl rounded-none z-50 "
       >
         <div>
@@ -93,7 +92,10 @@ const Navbar = () => {
           {/* <button className="py-2.5 xl:px-11 px-7 border-2 border-custom-gold text-custom-gold rounded-xl ">
             Guest
           </button> */}
-          <button className="py-2.5 xl:px-16 px-4 bg-custom-gradient  text-custom-black rounded-xl" onClick={handleClick}>
+          <button
+            className="py-2.5 xl:px-16 px-4 bg-custom-gradient  text-custom-black rounded-xl"
+            onClick={handleClick}
+          >
             register
           </button>
         </div>
