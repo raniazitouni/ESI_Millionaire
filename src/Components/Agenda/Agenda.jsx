@@ -40,7 +40,7 @@ const Agenda = () => {
             key={index}
             className="relative flex w-full items-center mb-3 md:mb-6
             text-white
-            hover:text-custom-gold  text-sm md:text-2xl  hover:md:text-3xl hover:text-md"
+            hover:text-custom-gold  text-sm xl:text-2xl lg:text-xl hover:lg:text-2xl hover:xl:text-3xl hover:text-md"
           >
             {/* Content Layout */}
             <div
